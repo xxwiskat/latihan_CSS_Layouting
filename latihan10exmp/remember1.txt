@@ -1,0 +1,8 @@
+Teknik Image Replacement yaitu teknik mengganti tulisan menjadi image.
+bisa menggunakan TEXT-INDENT.
+
+Text Indent= format yang digunakan untuk menjorokkan teks ke dalam(seperti
+		membuat paragraf)
+
+tetapi menggunakan properti text-indent kurang worth-it, karena ada beberapa 
+browser yang akan menemukan teksnya walaupun sudah diberi value yang banyak. 

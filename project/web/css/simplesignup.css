@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../pict/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    padding: 5px;
+    font: 40px bolder verdana, sans-serif;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid darkred;
+}
+.container{
+    width: 400px;
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+    margin: 70px auto;
+}
+.container form{
+    text-align: center;
+    color: whitesmoke;
+    font: 18px/28px bolder arial, sans-serif;
+}
+.container .hero{
+    width: 50%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 5px solid darkred;
+    color: ghostwhite;
+}
+.container .submit{
+    width: 200px;
+    font-size: 30px;
+    background-color: darkred;
+    display: block;
+    margin: 10px auto;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+}
+.container .reset{
+    width: 200px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Try Position Static & Relative</title>
+	<style>
+		
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.hero1{
+			background-color: lightgreen;
+		}
+		.hero2{
+			background-color: mediumpurple;
+			position: relative;
+			top: 30px;
+			left: 60px;
+		}
+		.hero3{
+			background-color: gold;
+		}
+
+	</style>
+</head>
+<body>
+<!-- 
+	Properti POSITION berfungsi untuk pada saat kita memindahkan 1 elemen, elemen yang dibawah atau diatasnya tidak ikut berubah, bedanya position dengan margin yaitu margin pada saat kita rubah marginnya, posisi elemen yang lain akan ikut berubah, seperti contoh: margin top: 100px; otomatis elemennya akan turun dan elemen dibawahnya ikut turun juga SEPERTI LINK DIBAWAH!
+
+	Value dari properti position yaitu:
+									1. Static{default}
+									2. Relative
+									3. Absolute
+									4.Fixed
+
+	Value STATIC merupakan position default atau position awal.
+	Value RELATIVE merupakan suatu elemen yang posisinya berada diatas dari elemen lainnya(tidak ditumpuk) dapat memungkinkan untuk berpindah-pindah/ seolah-olah maju satu dimensi mengarah ke user(diilustrasikan 3D), untuk lebih jelasnya KLIK LINK DIBAWAH!
+
+	CATATAN!
+	Pada saat meenggunakan value relative:
+		Pada saat kita memindahkan elemen menggunakan value relative, ruang/tempat sebelumnya tetap memiliki ruang atau ruang yang sebelumnya ditempati masih ada/tidak hilang 
+
+		Jika kita memberi elemen top: 0; dan left: 0;, elemen tidak akan berpindah/ titik kordinat 0,0(tempat asal)nya yaitu di tempat semula
+
+		Ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak relatif dari posisi semulanya.(artinya bergereak/berpindah dari posisi awal, bukan bergantung parentnya)
+
+		Value relative jarang digunakan untuk memindahkan elemen, biasanya hanya digunakan untuk mengangkat/maju satu dimensi saja/ supaya keluar dari flow awalnya saja.
+
+ -->
+
+	<div class="hero1">
+		
+	</div>
+	<div class="hero2">
+		
+	</div>
+	<div class="hero3">
+		
+	</div>
+
+	<br><br><br>
+	<h1><a href="img/exmp6.png" title="USE MARGIN" target="blank">Klik Link Ini!</a>(sebelum menggunakan properti position)</h1>
+	<h1><a href="img/pict1.png" title="USE RELATIVE" target="blank">Klik Link Ini!</a>(sebelum berisi value top, left, bottom, dan right)</h1>
+	<br><br>
+
+</body>
+</html>

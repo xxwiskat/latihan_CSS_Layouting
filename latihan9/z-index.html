@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Try z-index</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+		.hero1{
+			background-color: salmon;
+			z-index: 2;
+		}
+		.hero2{
+			background-color: lightgreen;
+			z-index: 3;
+		}
+		.hero3{
+			background-color: darkblue;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+<!-- 
+	Fungsi Z-index yaitu untuk mengatur tumpukan dari value non-static(relative, absolute, dan fixed)
+	Value dari z-index yaitu angka(tidak menggunakan satuan), semakin besar angkanya maka itulah tumpukannya berada di paling atas.
+
+	jika sumbu x itu untuk horizontal(kanan, dan kiri), dan sumbu y itu untuk vertikal(atas, dan bawah), maka sumbu z yaitu 3d atau seolah-olah menembus monitor dan mengarah ke arah user/menonjol ke arah user.
+
+	Jika ingin elemennya paling depan bisa ditulis 9999 dan jika ingin elemennya paling belakang bisa ditulis-9999
+
+	Jika penulisan z-indexnya sama maka balik ke peraturan awal mana yang ditulis terakhir itulah yang bakalan nonjol/ditampilkan, contoh: ada 3 elemen kotak yang memiliki warna yang berbeda, kotak 1 merah, kotak 2 hijau, dan kotak 3 biru, ke 3 kotak elemen memiliki z-index dengan value/angka yang sama, maka yang menjadi kotak yang paling depan/ kotak yang akan ditampilkan yaitu kotak ke 3 karena penulisan kotak ke 3 yang paling akhir. 
+
+ -->
+	<div class="hero1"></div>
+	<div class="hero2"></div>
+	<div class="hero3"></div>
+
+
+</body>
+</html>

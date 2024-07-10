@@ -1,0 +1,615 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start this*/
+
+@font-face{
+	font-family: 'BebasNeue';
+	src: url(../font/bebasneue-regular-webfont.woff) format('woff');
+}
+
+body{
+	background-image: url(../pict/bg4.png);
+	background-repeat: repeat;
+	color: black;
+}
+div.tanker{
+	width: 1100px;
+	box-sizing: border-box;
+	margin: auto;
+	background-color: lightgray;
+}
+
+div.head{
+	padding: 5px;
+	box-sizing: border-box;
+	border-bottom: 5px solid ghostwhite;
+	border-left: 5px solid ghostwhite;
+	border-right: 5px solid ghostwhite;
+	position: relative;
+
+}
+
+.head .instagram{
+	width: 50px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.head .instagram .hero{
+	filter: drop-shadow(0 0 2px black);
+}
+
+.head .instagram span{
+	display: inline-block;
+	width: 50px;
+	height: 60px;
+	background-color: rgba(20, 20, 20, .5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-indent: -9999999px;
+	opacity: 0;
+}
+
+.head .instagram:hover span{
+	opacity: 1;
+}
+
+.head .twitter{
+	width: 50px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+
+.head .twitter .hero1{
+	filter: drop-shadow(0 0 2px black);
+}
+
+.head .twitter span{
+	display: inline-block;
+	width: 50px;
+	height: 60px;
+	background-color: rgba(20, 20, 20, .5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-indent: -9999999px;
+	opacity: 0;
+}
+
+.head .twitter:hover span{
+	opacity: 1;
+}
+
+.head .judul{
+	font: italic 50px 'BebasNeue', 'ArialNarrow', sans-serif;
+	margin-left: 5px;
+	margin-bottom: -5px;
+}
+
+.head ul li{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.head ul li a:link{
+	font: 16px verdana;
+	box-sizing: border-box;
+	color: dimgray;
+	text-decoration: none;
+}
+
+.head ul li a:visited{
+	background-color: darkgray;
+	color: dimgray;
+	text-decoration: none;
+}
+.head ul li a:hover{
+	background: black;
+	color: ghostwhite;
+	text-transform: uppercase;
+
+}
+
+.head .head2 .head3{
+
+	float: right;
+}
+
+.head .head2 .head4{
+
+	float: right;
+}
+
+
+.main .main-left{
+	width: 148px;
+	float: left;
+	box-sizing: border-box;
+}
+.main .main-center{
+	width: 800px;
+	float: left;
+	box-sizing: border-box;
+}
+.main .main-right{
+	width: 148px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.content .main-center .judul1{
+	padding: 5px;
+	margin: 5px;
+	font: 25px bolder arial, sans-serif;
+	text-transform: uppercase;
+	text-align: justify-all;
+} 
+
+.content .main-center .hero{
+	width: 300px;
+	height: 326px;
+	background-image: url(../pict/epos.png);
+	margin: auto;
+	filter: drop-shadow(0 0 3px black);
+}
+
+.content .main-center p{
+	margin: 5px;
+	padding: 5px;
+	font: 18px/28px cambria, serif;
+	text-align: justify;
+}
+
+.content .main-center p.minion{
+	text-indent: 20px;
+}
+
+.content .main-center p.minion a:link{
+	color: blue;
+	text-decoration: none;
+}
+
+.content .main-center p.minion a:visited{
+	color: blue;
+	text-decoration: none;
+}
+
+.content .main .main-center .minion a:hover{
+	background-color: black;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+}
+
+.content .main-center ol{
+	margin: 5px;
+	padding: 5px;
+	margin-left: 50px;
+}
+.content .main-center ol li{
+	font: 18px/28px bolder cambria, serif;
+}
+.content .main-center .img{
+	width: 790px;
+	height: 300px;
+	background-image: url(../pict/iklan44.jpg);
+	margin: 10px auto;
+	background-position: 0 -45px;
+}
+
+ol li .evos:link{
+	color: blue;
+	text-decoration: none;
+}
+
+ol li .evos:visited{
+	color: blue;
+	text-decoration: none;
+}
+
+ol li .evos:hover{
+	background-color: black;
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.content .main-center textarea{
+	margin: 10px 5px;
+	padding: 5px;
+}
+.content .main-center h2{
+	margin: 10px 5px;
+	padding: 5px;
+	font-family: verdana, sans-serif;
+	font-size: 20px;
+}
+.content h2 a:visited{
+	color: blue;
+}
+.content h2 a:hover{
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+.content h2 a:active{
+	background-color: black;
+	color: ghostwhite;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.content .main-left .hero{
+	width: 130px;
+	height: 190px;
+	background-image: url(../pict/iklan4.jpg);
+	margin: 10px auto;
+}
+
+.content .main-left .hero span{
+	width: 130px;
+	height: 190px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-left .hero:hover span{
+	opacity: 1;
+}
+
+.content .main-left .hero1{
+	width: 130px;
+	height: 390px;
+	background-image: url(../pict/iklan.jpg);
+	margin: 10px auto;
+}
+
+.content .main-left .hero1 span{
+	width: 130px;
+	height: 390px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-left .hero1:hover span{
+	opacity: 1;
+}
+
+.content .main-left .hero2{
+	width: 130px;
+	height: 280px;
+	background-image: url(../pict/iklan2.jpg);
+	margin: 10px auto;
+}
+
+.content .main-left .hero2 span{
+	width: 130px;
+	height: 280px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-left .hero2:hover span{
+	opacity: 1;
+}
+
+.content .main-left .hero3{
+	width: 130px;
+	height: 260px;
+	background-image: url(../pict/iklan3.jpg);
+	margin: 10px auto;
+}
+
+.content .main-left .hero3 span{
+	width: 130px;
+	height: 260px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-left .hero3:hover span{
+	opacity: 1;
+}
+
+.content .main-left .hero4{
+	width: 130px;
+	height: 250px;
+	background-image: url(../pict/iklan7.jpg);
+	margin: 10px auto;
+}
+
+.content .main-left .hero4 span{
+	width: 130px;
+	height: 250px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-left .hero4:hover span{
+	opacity: 1;
+}
+
+.content .main-left .hero5{
+	width: 130px;
+	height: 183px;
+	background-image: url(../pict/iklan14.jpg);
+	margin: 10px auto;
+	background-position: 254px 200px;
+}
+
+.content .main-left .hero5 span{
+	width: 130px;
+	height: 183px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-left .hero5:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero0{
+	width: 130px;
+	height: 190px;
+	background-image: url(../pict/iklan14.jpg);
+	transform: rotateY(180deg);
+	background-position: 254px 200px;
+	margin: 10px auto;
+}
+
+.content .main-right .hero0 span{
+	width: 130px;
+	height: 190px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero0:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero{
+	width: 130px;
+	height: 184px;
+	background-image: url(../pict/iklan5.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero span{
+	width: 130px;
+	height: 184px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero1{
+	width: 130px;
+	height: 250px;
+	background-image: url(../pict/iklan6.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero1 span{
+	width: 130px;
+	height: 250px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero1:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero2{
+	width: 130px;
+	height: 165px;
+	background-image: url(../pict/iklan8.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero2 span{
+	width: 130px;
+	height: 165px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero2:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero3{
+	width: 130px;
+	height: 180px;
+	background-image: url(../pict/iklan9.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero3 span{
+	width: 130px;
+	height: 180px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero3:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero4{
+	width: 130px;
+	height: 185px;
+	background-image: url(../pict/iklan10.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero4 span{
+	width: 130px;
+	height: 185px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero4:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero5{
+	width: 130px;
+	height: 250px;
+	background-image: url(../pict/iklan12.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero5 span{
+	width: 130px;
+	height: 250px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero5:hover span{
+	opacity: 1;
+}
+
+.content .main-right .hero6{
+	width: 90px;
+	height: 130px;
+	background-image: url(../pict/iklan11.jpg);
+	margin: 10px auto;
+}
+
+.content .main-right .hero6 span{
+	width: 90px;
+	height: 130px;
+	background-color: rgba(0, 0, 0, .4);
+	display: inline-block;
+	text-indent: -99999999px;
+	opacity: 0;
+}
+
+.content .main-right .hero6:hover span{
+	opacity: 1;
+}
+
+.footer{
+	width: 1100px;
+	height: 50px;
+	background-color: black;
+	color: ghostwhite;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.footer p{
+	font: 25px bolder verdana, sans-serif;
+	text-align: center;
+	line-height: 40px;
+}
+/** Clear fix For Float
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

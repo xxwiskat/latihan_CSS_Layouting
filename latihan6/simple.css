@@ -1,0 +1,33 @@
+div.container{
+	background-color: skyblue;
+	width: 500px;
+	border: 3px dashed black;
+	margin: 10px auto;
+	padding: 10px 5px;
+}
+
+.satu, .dua, .tiga, .empat{
+	width: 100px;
+	height: 100px;
+}
+
+.satu{
+	background-color: rebeccapurple;
+}
+
+.dua{
+	background-color: hotpink;
+	float: right;
+}
+
+.tiga{
+	background-color: limegreen;
+}
+
+.empat{
+	background-color: red;
+}
+
+a{
+	display: block;
+}

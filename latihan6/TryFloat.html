@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Try CSS Float</title>
+	<link rel="stylesheet" href="simple.css">
+</head>
+<body>
+
+<!-- 
+	Tipe dari float ini adalah Out of Flow, sedangkan box model merupakan normal flow.Value dari float yaitu: none, left, dan right (posisinya mengikuti parent/pembungkusnya) LINK DIBAWAH CONTOH NORMAL FLOW
+ -->
+
+ <!-- 
+	Fungsi properti float yaitu:
+		1. Text Wrapping= membuat teks mengelilingi gambar/elemen
+		2. Image Gallery= membuat serangkaian gambar menjadi galeri
+		3. Multi-column layout= membuat halaman memiliki beberapa kolom/box
+		4. dll.
+  -->
+
+<div class="container">
+ <div class="satu"></div>
+ <div class="dua"></div>
+ <div class="tiga"></div>
+ <div class="empat"></div>
+</div>
+<!-- 
+	Kenapa Warna Limegreennya hilang? karena warna limegreennya menganggap warna hotpink sudah keluar dari flownya karena hotpink sudah diberi format float jadinya warna hijaunya ditumpuk oleh hotpink, LINK DIBAWAH CONTOH GREEN DITUMPUK HOTPINK DAN HOTPINK PINDAH KE KANAN
+ -->
+ <p>
+ 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p>
+<br><br>
+
+<a href="pict/exmp.png" title="CONTOH NORMAL FLOW" target="blank">
+	Examp1
+</a>
+<a href="pict/exmp3.png" title="CONTOH out of flow" target="blank">
+	Examp2
+</a>
+<a href="pict/exmp2.png" title="CONTOH out of flow" target="blank">
+	Examp3
+</a>
+
+
+
+</body>
+</html>

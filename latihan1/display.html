@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Try CSS Display
+	</title>
+
+	<style>
+		
+		.header{
+			background-color: rebeccapurple;
+		}
+
+		.navigasi{
+			background-color: palevioletred;
+		}
+
+		a{
+			display: inline-block;
+			background-color: deeppink;
+			width: 150px;
+			height: 150px;
+
+		}
+
+		img{
+			width: 250px;
+			height: 250px;
+		}
+
+		.main{
+			background-color: red;
+			width: 700px;
+		}
+
+		.main h2 {
+			background-color: hotpink;
+		}
+
+		div.main p span{
+			background-color: darkgreen;
+		}
+		/*
+			bisa juga menggunakan: 
+				.main span{}
+		*/
+
+	</style>
+</head>
+<body>
+
+<!-- 
+	Contoh Penggunaan <div> dan <span>, sebenarnya div dan span tidak ada fungsi khusus/tidak memberikan pengaruh terhadap tag/teks, tetapi biasanya div digunakan untuk mengelompokkan tag tag html.Sedangkan span digunakan untuk mengelompokkan beberapa kata. 
+-->
+
+<!-- 
+	Value Display default dari div dan span yaitu
+	div{ display:block;} dan span { display:inline;}
+ -->
+
+ <!-- 
+	Value dari properti Display yaitu: 
+	inline (teksnya kesamping/tidak bisa menambahkan garis baru),
+
+	inline-block (teksnya kesamping tetapi dapat diubah tinggi dan lebar teksnya ),
+
+	block (bisa menambahkan baris baru sesuai format teksnya, bisa mengatur tinggi dan lebar elemen) 
+
+	none(digunakan untuk menghilangkan elemen/tag).
+
+	Untuk value Inline tidak dapat diubah tinggi dan lebar teks/menyesuaikan format teksnya, tetapi tag img(gambar) bisa dirubah tinggi dan lebarnya walaupun tag img default displaynya INLINE.
+
+	Untuk Value Block, jika kita tidak ubah lebar/tingginya maka bidang yang diambil memenuhi browser, disarankan untuk mengatur lebar/tingginya terlebih dahulu
+
+
+  -->
+
+	<div class="header">
+
+		<h1>Welcome To My Web</h1>	
+
+	</div>
+	
+	<div class="navigasi">
+
+		<h2>Daftar Link</h2>
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+
+	</div>
+<h2>halowww</h2>
+	<div class="main">
+		
+		<h2>Judul Artikel</h2>
+		<h2>Judul Artikel</h2>
+
+		<img src="gambar/logo.png">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <span>exercitation ullamco laboris</span> nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+	</div>
+
+	<div class="copyright">
+		
+		<p>
+			Copyright 2022. Wiskat'SIIUUUU.
+		</p>
+
+	</div>
+
+	 
+
+</body>
+</html>

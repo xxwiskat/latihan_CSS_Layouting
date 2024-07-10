@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Testing Fixed</title>
+	<style>
+		body{
+			height: 1000px;
+		}
+		.hero1, .hero2, .hero3{
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			box-sizing: border-box;
+		}
+		.tanker{
+			width: 600px;
+			height: 600px;
+			border: 5px solid palevioletred;
+			margin: 50px auto;
+			position: relative;
+		}
+		.hero1{
+			background-color: lightgreen;
+		}
+		.hero2{
+			background-color: mediumpurple;
+		}
+		.hero3{
+			background-color: gold;
+		}
+		.top-bar{
+			width: 100%;
+			height: 70px;
+			background-color: darkgrey;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+<!-- 
+	Kenapa pada saat top-bar scroll kebawah div tanker dan hero menjadi numpuk di top-bar SEPERTI LINK DIBAWAH!
+	Karena div.tankernya naik 1 dimensi yang artinya posisi div.tanker dan top-bar sama itulah kenapa div tanker dan hero numpuk di div.top-bar.Solusinya yaitu mengubah div.tanker menjadi static, atau bisa juga mengubah tata letak div.top-bar di halaman html jadi posisi top-bar dibawah dari div.tanker karena seperti konsep halaman html semakin tag html dibawah maka itulah yang menjadi tag html yang digunakan atau seperti di photoshop semakin baru layer maka itu yang menjadi paling atas/yang akan ditampilkan, dan menggunakan z-index(di latihan9)
+ -->
+<div class="top-bar"></div>
+
+<div class="tanker">
+	<div class="hero1"></div>
+	<div class="hero2"></div>
+	<div class="hero3"></div>
+</div><br>
+<h1><a href="img/exmp5.png" target="blank" title="TOP-BAR DAN TANKER MENUMPUK">
+	Klik link Ini
+</a></h1>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+		Try Margin	
+	</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<div class="satu">1</div>
+<!-- 
+	Overlapping Margin(vertikal/atas bawah) yaitu ketika margin atas dan bawahnya disatukan, misalnya div 1 mempunyai margin bottom 50px, dan div 2 mempunyai margin top 25px otomatis margin yang digunakan yaitu 50px. Logikanya yaitu 25px dihantam sama 50px
+ -->
+	<div class="dua">2</div>
+
+<!-- 
+	Untuk mengatasi jarak antara div 3 dan 4, kita harus menggabungkan divnya/tidak boleh berisikan baris pada div
+ -->
+	 <a href="gambar/examp.png" target="blank">
+	 	Contoh sebelum barisnya dihapus
+	</a>
+	 <a href="gambar/examp2.png" target="blank">
+		Contoh sesuda barisnya dihapus
+	</a>
+ <br><br><br>
+
+<!-- 
+	Overlapping Margin(horizontal/kanan kiri) yaitu ketika margin kanan dan kiri disatukan, berbeda dengan vertikal, kalau di horizontal kedua value/nilai marginnya ditambah, misalnya margin-rightnya 50px dan margin leftnya 50px, maka yang terjadi marginnya berjarak 100px
+ -->
+	<div class="tiga">3</div><div class="empat">4</div>
+<br><br><br><br><br><br>
+
+
+<!-- 
+	Negatif Margin yaitu memaksakan posisi konten, misalnya div 5 margin-bottomnya 50px dan div 6 margin-topnya -75px, maka yang terjadi yaitu margin-top milik div 6 akan ditumpuk(tergantung value) kontennya sama div 5 dan elemen elemen lainnya ikut ke atas juga, atau bisa juga margin-left milik div 6 bisa ke luar tampilan browser{jika menggunakan value (-)} 
+ -->
+
+<a href="gambar/examp3.png" target="blank" title="Contoh Jika value margin-leftnya (-)">
+	Example
+</a>
+ <br><br><br><br><br>
+
+	<div class="lima">5</div>
+	<div class="enam">6</div>
+<br><br><br><br><br><br>
+
+<!-- 
+	Value auto yaitu membuat marginnya berada di tengah-tengah parent tetapi hanya bisa dilakukan margin-right dan left saja(horizontal). Dan Penulisan autonya harus ditulis di kedua marginnya(left&right)
+-->
+
+	<div class="tujuh">7</div>
+	<div class="eight">8</div>
+<br><br><br><br><br><br>
+
+<!-- 
+	Shorthand yaitu hanya menggunakan properti marginnya saja.Contoh {margin:50px;}= artinya keempat sisinya(left, right, top, & bottom) memiliki margin 50px
+
+Remember this!!
+	Examp: {margin: 150px 200px;}
+		Value pertama (margin: 150px; ) untuk margin top dan bottom
+		Value kedua(margin: 200px; ) untuk margin right dan left
+
+	Examp: {margin: 200px auto;}
+		Value pertama(200px) untuk margin top dan bottom
+		Value kedua(auto) untuk menggeser konten ke tengah parentnya
+
+	Examp: {margin:50px 100px 25px;}
+		Value pertama(50px) untuk margin top
+		Value kedua(100px) untuk margin right dan left
+		Value ketiga (25px) untuk value bottom
+
+	Examp: {margin: 150px 100px 50px 25px;}
+		value pertama(150px) untuk margin top
+		Value kedua(100px) untuk margin right
+		Value ketiga(50px) untuk margin bottom 
+		Value keempat(25px) untuk margin left
+
+
+(Bacaan/perintahnya selalu mulai dari atas, kanan, bawah, dan kiri)
+	
+ -->
+ 
+	<div class="nine">9</div>
+	<div class="ten">10</div>
+<br><br><br><br><br><br>
+
+</body>
+</html>
